@@ -1,62 +1,75 @@
-# Literalura
+# LiterAlura
 
-<div align="center">
+**Descrição:**
+O projeto **LiterAlura** é uma aplicação de busca de livros desenvolvida como parte dos estudos em Spring Boot. Ele oferece uma interface para consulta e gerenciamento de informações sobre livros, integrando banco de dados relacional e recursos modernos de desenvolvimento em Java.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Java Version](https://img.shields.io/badge/Java-8%2B-blue)](https://www.java.com/)
-![GitHub repo size](https://img.shields.io/github/repo-size/rodrigoborge/Literalura)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rodrigoborge/Literalura)
+---
 
-</div><br>
+## 🛠 Tecnologias Utilizadas
 
-## Badge
+- **Linguagem de Programação:** Java 21
+- **Framework Principal:** Spring Boot 3.3.0
+- **Banco de Dados:** PostgreSQL
+- **ORM:** Hibernate (JPA)
+- **Gerenciamento de Dependências:** Maven
 
-Este é um badge conquistado por ter desenvolvido este projeto com a Alura no programa ONE - "Oracle Next Education" em parceria com a Oracle:
+---
 
-<div align="center">
+## 📂 Estrutura do Projeto
 
-![Badge](img/badge%20literalura.png)
+O projeto segue uma arquitetura limpa com as seguintes camadas:
 
-</div>
+1. **Controller:** Gerencia as requisições e respostas HTTP.
+2. **Service:** Implementa as regras de negócio.
+3. **Repository:** Responsável pela interação com o banco de dados usando JPA.
+4. **Model:** Contém as entidades que representam as tabelas do banco de dados.
 
-### Instalação
+---
 
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+- Java 21 instalado
+- Maven configurado
+- Banco de Dados PostgreSQL configurado
+
+### Passos
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/rodrigoborge/literalura.git
-   cd literalura
+   git clone https://github.com/Carlosaleee/LiterAlura.git
    ```
-
-2. Configure o banco de dados no arquivo `application.properties`:
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd LiterAlura
+   ```
+3. Configure o arquivo `application.properties` com as credenciais do seu banco de dados:
    ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/literalura
-   spring.datasource.username=seu-usuario
-   spring.datasource.password=sua-senha
+   spring.datasource.url=jdbc:postgresql://localhost/literalura
+   spring.datasource.username=<seu-usuario>
+   spring.datasource.password=<sua-senha>
    spring.jpa.hibernate.ddl-auto=update
-   spring.jpa.show-sql=true
    ```
-
-3. Execute o projeto:
+4. Compile e execute o projeto:
    ```bash
    mvn spring-boot:run
    ```
 
-## Estrutura do Projeto
+---
 
-- `br.com.alura.literalura`: Pacote principal do projeto.
-  - `principal`: Contém a classe `Principal`, que gerencia a execução da aplicação.
-  - `model`: Contém as classes de modelo (`Livro`, `Autor`, `LivroDTO`, `AutorDTO`).
-  - `repository`: Contém as interfaces de repositório Spring Data JPA.
-  - `service`: Contém as classes de serviço (`ConsumoAPI`, `ConverteDados`).
+## 🧑‍💻 Desenvolvedor
 
-## Autor
+**Carlos Alexandre da Silva**
+- [GitHub](https://github.com/Carlosaleee)
+- [LinkedIn](https://www.linkedin.com/in/carlos-alexandre-66b962279/)
 
-Esta aplicação em Java foi desenvolvida por [Rodrigo Borge](https://github.com/rodrigoborge)
+---
 
-## Contribuição
+## 📜 Licença
+Este projeto é licenciado sob os termos da licença MIT. Para mais detalhes, consulte o arquivo `LICENSE`.
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar sugestões, correções de bugs ou melhorias através de issues e pull requests.
+---
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE)
+## 🔗 Links
+- [Repositório no GitHub](https://github.com/Carlosaleee/LiterAlura)
+- [Documentação do Spring Boot](https://spring.io/projects/spring-boot)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
